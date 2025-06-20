@@ -1,0 +1,37 @@
+td{
+    width: 200px;
+    height: 120px;
+    border: 1px solid blue;
+}
+
+td:first-child{
+    background-color: beige;
+}
+
+td, h2{
+    text-align: center;
+}
+
+.green{
+    background-color: green;
+}
+.border{
+    border:2px solid #e44d26
+}
+#dotted{
+    border: 2px dotted orange;
+}
+div#position:nth-child(1){
+    position:relative;
+    left: 30px;
+}
+div#position:nth-child(2){
+    position:absolute;
+    left: 20px;
+    top:30px;
+}
+div#position:nth-child(3){
+    position:fixed;
+    left: 30px;
+    top:40px;
+}

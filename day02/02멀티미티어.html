@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <!-- day01복습.html에서 사용한 img, iframe 태그 예제만 옮겨서
+어떤 태그는 속성을 갖고 있습니다. 이미지 img 태그는 src 속성에 이미지 주소를 주어야 합니다.
+        width 속성은 이미지 크기를 바꿀 때 사용합니다.
+    -->
+    <h3>1. 이미지</h3>
+    
+    <img src="../day01/나무위키CSS.svg" alt="css logo" width="150px">
+    <!-- src 속성값의 이미지 위치가 잘못된 경우에는 alt  속성의 텍스트만 표시됩니다. 
+    다른 폴더에 저장된 이미지 파일은 폴더의 위치 (여기서는 day01)를 작성해야 합니다. 
+    -->
+    <img width="200px"
+    src="https://i.namu.wiki/i/4kSjvSfT-WZjiBh1oKEF_yHt-b1K3bc96umHAZrOHxdxHQj3l0HgB-QDDavTHdjKSYpggbGMXROt-EuBS5tsXOdhrjzsvdY71TKXzfuRqEdQvhpirZccQ5K4tmXKSr7x8Gr6Deu0-7vaSj2mXiOHfQ.svg">
+    
+    <h3>2. 스타일 속성 사용</h3>
+    
+    <h3 style="color: darkgreen;background-color: red;">1. 개요</h3>
+    <hr>
+    
+    <h3>3. iframe 태그 - 공유 멀티미디어 자원 가져오기</h3>
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OEV8gMkCHXQ?si=QcF5DbXVBeZ_Povq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <hr>
+    <!-- 동영상 태그 : 자동실행하기 -->
+    
+    <h3>4. 동영상 재생하기</h3>
+    
+    <video width="400px" 
+    src="CSS카툰.mp4" playsinline autoplay muted loop loading="lazy"></video>
+</body>
+</html>

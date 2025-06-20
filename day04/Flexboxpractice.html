@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Flexboxpractice.css">
+</head>
+<body>
+    <h3>row nowrap</h3>
+    <div class="container flex-row">
+        <div>H</div>
+        <div>T</div>
+        <div>M</div>
+        <div>L</div>
+    </div>
+    <h3>row nowrap</h3>
+    <div class="container flex-row" style="align-items: center;">
+        <div>H</div>
+        <div>T</div>
+        <div>M</div>
+        <div>L</div>
+    </div>
+    <h3>row nowrap</h3>
+    <div class="container flex-row">
+        <div>H</div>
+        <div style="flex-grow: 1;">T</div>
+        <div style="flex-grow: 2;">M</div>
+        <div>L</div>
+    </div>
+    <h3>wrap</h3>
+    <div class="container flex-row wrap">
+        <div>H</div>
+        <div>T</div>
+        <div>M</div>
+        <div>L</div>
+    </div>
+    <h3>space-evenly</h3>
+    <div class="container flex-row wrap" style="justify-content: space-evenly;">
+        <div>H</div>
+        <div>T</div>
+        <div>M</div>
+        <div>L</div>
+    </div>
+    <h3>space around</h3>
+    <div class="container flex-row wrap" style="justify-content: space-around;">
+        <!-- justify-content는 부모요소의 공간이 많을 때 정렬 방식을 정합니다.-->
+        <div>H</div>
+        <div>T</div>
+        <div>M</div>
+        <div>L</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    /* 요소의 가로,세로 크기에(padding과 border포함) 
+    width=가로, height=세로 */
+}
+.product-list{
+    /* ul 목록 기호 없애기! */
+    list-style: none;
+    /* width: 950px; */
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    gap:10px;
+    padding:0;
+}
+.product-list > li{
+    width: 230px;
+    padding: 10px;
+    /* border: 1px solid #ddd; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* transition: transform 0.5s ease, border-color 0.5s ease;*/
+    cursor: pointer;
+} 
+
+/* hover은 가상선택자입니다. 요소에 마우스 오버될 때 보이는 스타일 */
+/* .product-list > li:hover{
+    transform: scale(1.03);
+    /* border-color: #007bff; */
+
+.product-list img:hover{
+    transform: scale(1.03);
+    border-color: #007bff;
+    transition: transform 0.5s ease, border-color 0.5s ease;
+}
+
+.product-list img{
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ddd;
+}
+
+
+.product-name{
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin: 10px 0px 5px;
+}
+
+/* .product-name > div:hover{
+    transform: scale(1.03);
+    font-weight: 600;
+    border-color: #007bff;
+} */
+
+.product-price{
+    font-weight: 600;
+}
+
+.badge{
+    background-color: #007bff;
+    color: white;
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+/* 반응형 : 540 px 이하 -> 2개 컬럼 (230+230+10) */
+@media (max-width: 540px){
+    .product-list{
+        width:100%;
+        flex-shrink: 0;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="12FlexBox.css">
+    <title>Flex 레이아웃</title>
+</head>
+<body>
+    <h3>row nowrap</h3>
+    <div class="container flex-row">
+        <div>H</div>
+        <div>T</div>
+        <div>M</div>
+        <div>L</div>
+    </div>
+    <h3>row nowrap align-items:center</h3>
+    <p>nowrap 단일행인 경우. 반대축 정렬하는 방법.</p>
+    <div class="container flex-row" style="align-items: center;">
+        <div>H</div>
+        <div>T</div>
+        <div>M</div>
+        <div>L</div>
+    </div>
+
+    <h3>row nowrap flex-grow:1</h3>
+    <div class="container flex-row">
+        <div>H</div>
+        <div style="flex-grow: 1;">T</div>
+        <div style="flex-grow: 2;">M</div>
+        <div>L</div>
+    </div>
+
+    <h3>container flex-row wrap</h3>
+    <p>래핑 효과를 확인하려면 부모 요소가 작아지도록 브라우저의 크기를 줄입니다.</p>
+    <div class="container flex-row wrap">
+        <!-- 래핑 효과를 확인하려면 부모 요소가 작아지도록 브라우저의 크기를 줄입니다. -->
+        <div>H</div>
+        <div>T</div>
+        <div>M</div>
+        <div>L</div>
+    </div>
+
+    <h3>container flex-row wrap align-content: center</h3>
+    <p>래핑 효과를 확인하려면 부모 요소가 작아지도록 브라우저의 크기를 줄입니다.</p>
+    <div class="container flex-row wrap" style="align-content: flex-end;">
+        <!-- 래핑 효과를 확인하려면 부모 요소가 작아지도록 브라우저의 크기를 줄입니다. -->
+        <div>H</div>
+        <div>T</div>
+        <div>M</div>
+        <div>L</div>
+    </div>
+
+    <h3>container flex-row wrap justify-content: space-evenly</h3>
+    <p>justify-content는 부모요소의 공간이 많을 때 정렬 방식을 정합니다.</p>
+    <div class="container flex-row wrap" style="justify-content: space-evenly;">
+        <!-- justify-content는 부모요소의 공간이 많을 때 정렬 방식을 정합니다.-->
+        <div>H</div>
+        <div>T</div>
+        <div>M</div>
+        <div>L</div>
+    </div>
+    <h3>container flex-row wrap justify-content: around</h3>
+    <p>justify-content는 부모요소의 공간이 많을 때 정렬 방식을 정합니다.</p>
+    <div class="container flex-row wrap" style="justify-content: space-around;">
+        <!-- justify-content는 부모요소의 공간이 많을 때 정렬 방식을 정합니다.-->
+        <div>H</div>
+        <div>T</div>
+        <div>M</div>
+        <div>L</div>
+    </div>
+
+</body>
+</html>
