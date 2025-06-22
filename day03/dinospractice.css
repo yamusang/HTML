@@ -1,84 +1,78 @@
-*{
-    box-sizing: border-box;
-}
 ul{
     list-style: none;
 }
-header
 
- {
+header{
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
-    padding: 0px;
-    margin: 0px;
-    color: #fff;
     box-shadow: 0px 0.7142857143rem 1.4285714286rem 0 rgba(15, 16, 16, 0.3);
 }
 
-.top-nav
-{
+.top-nav{
     padding: 1px;
     margin: 0px;
     background-color: #011122;
 }
+
 .top-nav > ul{
     display: flex;
-    gap: 120px;
 }
-.top-nav > ul > li{
+
+.top-nav li{
     font-size: small;
+    margin-left: 30px;
 }
+
 a{
     color: white;
     text-decoration: none;
+    margin-left: 30px;
+    font-weight: 600;
+
 }
+
 header .top-nav li.sns-wrap{
     position: absolute;
     right: 0;
+    margin-right: 30px;
 }
+
 .header-wrap{
     display: flex;
     width: 100%;
     background: #071d3d;
 }
+
 .header-wrap > div{
     display: flex;
 }
+
 .menu-wrap > ul{
     display: flex;
-    gap: 50px;
-       
+    gap: 30px;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
 }
-.menu-wrap > ul > li{
-    justify-content: center;
-    vertical-align: baseline;
+
+.menu > li { 
+    position: relative;
+    width: 180px;
+    box-sizing: border-box;
+    line-height: 60px;
 
 }
 
 .header-wrap .logo >a{
     display: block;
-    background: url(NCDinos.png);
+    background: url(https://www.ncdinos.com/assets/images/logo-89b7b3780358b9ebce0ce8b015097d41.png);
     background-size: 100%;
     width: 8.3714285714rem;
     height: 3.0714285714rem;
 }
 
 .hidden{
-    text-indent: -9999px;
-    overflow: hidden;
     font-size: 0;
-}
-
-nav, header{
-    
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font: inherit;
-    vertical-align: baseline;
-}
-nav, header{
-    display: block;
 }
